@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variaveis e tipos Primitivos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #ae22f939;
+      }
+      h1 {
+        color: #254dff;
+        text-align: center;
+      }
+      p {
+        font-size: 18px;
+        color: #000000;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>OLa mundo</h1>
+    <p>Meu primeiro programa em JavaScript</p>
+    <script>
+      var n1 = Number(window.prompt("Digite um numero"));
+      var n2 = Number(window.prompt("Digite outro numero"));
+      var soma = n1 + n2;
+      //Concatenação
+      window.alert("a soma entre " + n1 + " e " + n2 + " é igual a " + soma);
+      //Template String
+      Window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`);
+    </script>
+  </body>
+</html>
