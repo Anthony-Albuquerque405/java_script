@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercicio usando o if e else</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f4;
+      }
+      legend {
+        font-weight: bold;
+        margin-bottom: 10px;
+        border-radius: 1px solid black;
+      }
+      input {
+        padding: 5px;
+        font-size: 15pt;
+      }
+      #res {
+        margin-top: 20px;
+        font-size: 20pt;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nacionalidade</h1>
+    <form action="#" method="post"></form>
+    <legend>Verifição de Nacionalidade</legend>
+    <input
+      type="text"
+      name="nacionalidade"
+      id="nacionalidade"
+      placeholder="Nacionalidade"
+    />
+    <br /><br />
+    <input type="button" value="Verificar" onclick="verificar()" />
+    <br />
+    <div id="res"></div>
+    <script>
+      function verificar() {
+        txt = document.getElementById("nacionalidade");
+        var nac = String(txt.value).toLowerCase();
+        res = document.getElementById("res");
+        if (nac == "brasileiro") {
+          res.innerHTML = `<p>Você é <strong>${nac}</strong>!<p/>`;
+        } else {
+          res.innerHTML = `<p>Você é <strong>estrangeira</strong>!<p/>`;
+        }
+      }
+    </script>
+  </body>
+</html>
