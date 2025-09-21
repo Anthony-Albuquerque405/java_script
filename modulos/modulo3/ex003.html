@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudando DOM</title>
+    <style>
+      body {
+        font: bold 12pt Arial, sans-serif;
+        background-color: beige;
+      }
+      input {
+        font: bold 12pt Arial, sans-serif;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      div#res {
+        margin-top: 20px;
+        color: rgba(91, 6, 110, 0.711);
+        font: bold 20pt Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="valor1" id="tn1" /><br />
+    <input type="number" name="valor2" id="tn2" /> <br />
+    <input type="button" value="Somar" onclick="somar()" />
+
+    <div id="res">Resultado:</div>
+
+    <script>
+      function somar() {
+        var n1 = document.getElementById("tn1").value;
+        var n2 = document.getElementById("tn2").value;
+        var res = Number(n1) + Number(n2);
+        document.getElementById("res").innerText = `Resultado: ${res}`;
+      }
+    </script>
+  </body>
+</html>

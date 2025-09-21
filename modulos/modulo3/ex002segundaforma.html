@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evventos DOM</title>
     <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: #ccc;
+      }
       div#area {
         font: bold 20pt Arial, sans-serif;
         background-color: #494747c5;
@@ -13,11 +21,12 @@
         height: 200px;
         line-height: 200px;
         text-align: center;
+        margin: auto;
       }
     </style>
   </head>
   <body>
-    <div id="area">interação onclick</div>
+    <div id="area">interação</div>
     <script>
       var a = document.getElementById("area");
       a.addEventListener("click", clicar);
@@ -35,6 +44,22 @@
       function sair() {
         a.innerText = "Saiu!";
         a.style.background = "#494747c5";
+      }
+
+      var b = document.querySelector("body");
+      b.addEventListener("mousemove", mudar);
+      b.addEventListener("mouseout", voltar);
+      b.addEventListener("click", clica);
+
+      function mudar() {
+        b.style.background = "#0000006a";
+      }
+      function voltar() {
+        b.style.background = "#ccc";
+      }
+      function clica() {
+        a.innerText = "Clicou!";
+        b.style.background = "#f90";
       }
     </script>
   </body>
