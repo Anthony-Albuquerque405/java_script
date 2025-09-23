@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  background-color: #90bfd4;
+  font: normal 15pt Arial, Helvetica, sans-serif;
+}
+header {
+  text-align: center;
+}
+section {
+  margin: auto;
+  width: 430px;
+  height: 500px;
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: #d9e6f2;
+}
+
+footer {
+  text-align: center;
+}
