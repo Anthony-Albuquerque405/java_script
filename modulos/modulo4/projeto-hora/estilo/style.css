@@ -10,16 +10,26 @@ header {
   text-align: center;
 }
 section {
-  background-color: azure;
+  background-color: rgba(240, 255, 255, 0.507);
   border-radius: 10px;
+  width: 450px;
+  height: 350px;
   padding: 15px;
-  width: 500px;
   margin: auto;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.336);
   margin-bottom: 15px;
+}
+section > div#foto > img {
+  width: 70%;
+  height: 300px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 50% 50%;
 }
 footer {
   color: white;
   text-align: center;
   font-style: italic;
+  margin-top: 160px;
 }
