@@ -53,10 +53,10 @@ function verificar() {
     img.style.objectFit = "cover";
     img.style.boxShadow = "0px 0px 10px black";
     img.style.border = "1px solid black";
-    res.style.textAlign = "center";
 
     //-----------------------------------------------------
 
+    res.style.textAlign = "center";
     res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`;
     res.appendChild(img);
   }
