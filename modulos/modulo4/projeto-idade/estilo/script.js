@@ -17,13 +17,6 @@ function verificar() {
       if (idade >= 0 && idade < 10) {
         //Criança
         img.setAttribute("src", "estilo/homem-crianca.jpg");
-        img.style.borderRadius = "50%";
-        img.style.marginTop = "10px";
-        img.style.width = "250px";
-        img.style.height = "250px";
-        img.style.objectFit = "cover";
-        img.style.boxShadow = "0px 0px 15px black";
-        img.style.border = "5px solid black";
       } else if (idade < 21) {
         //Jovem
         img.setAttribute("src", "estilo/homem-jovem.jpg");
@@ -52,14 +45,18 @@ function verificar() {
         img.setAttribute("src", "estilo/mulher-velha.jpg");
       }
     }
+
     img.style.borderRadius = "50%";
     img.style.marginTop = "10px";
     img.style.width = "250px";
     img.style.height = "250px";
     img.style.objectFit = "cover";
-    img.style.boxShadow = "0px 0px 15px black";
+    img.style.boxShadow = "0px 0px 10px black";
     img.style.border = "1px solid black";
     res.style.textAlign = "center";
+
+    //-----------------------------------------------------
+
     res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`;
     res.appendChild(img);
   }
