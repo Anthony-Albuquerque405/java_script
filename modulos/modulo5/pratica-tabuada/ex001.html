@@ -13,12 +13,21 @@
     <section>
       <div>
         <p>
-          Numero: <input type="number" name="num" id="txtn" /> <br />
+          Numero:
+          <input
+            type="number"
+            name="num"
+            id="txtn"
+            placeholder="Escolha taboada"
+          />
+          <br />
           <input type="button" value="Gerar Tabuada" onclick="gerar()" />
         </p>
       </div>
       <div>
-        <select name="tabuada" id="seltab"></select>
+        <select name="tabuada" id="seltab" size="10" style="width: 100%">
+          <option value="">digite um numero e clique em gerar</option>
+        </select>
       </div>
     </section>
     <footer>anthony.test</footer>
