@@ -61,6 +61,8 @@ function finalizar() {
       }
     }
 
+    // exibir resultados
+
     res.innerHTML = "";
     res.innerHTML += `<p>Ao todo, temos ${tot} numeros cadastrados.</p>`;
     res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`;
