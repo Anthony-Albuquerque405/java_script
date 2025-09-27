@@ -3,16 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>titulo</title>
+    <title>Analisador de Numeros</title>
     <link rel="stylesheet" href="estilo/style.css" />
   </head>
   <body>
     <header>
-      <h1>titulo</h1>
+      <h1>Analizador de Numeros</h1>
     </header>
     <section>
-      <div></div>
-      <div></div>
+      <div>
+        <p>
+          Numero entre 1 e 100:
+          <input type="number" name="fnum" id="fnum" />
+          <input
+            type="button"
+            value="Adicionar"
+            id="btnAdd"
+            onclick="adicionar()"
+          />
+          <br />
+          <select name="flista" id="flista" size="10"></select>
+          <br />
+          <input
+            type="button"
+            value="Finalizar"
+            id="btnFin"
+            onclick="finalizar()"
+          />
+        </p>
+      </div>
+      <div id="res"></div>
     </section>
     <footer><p>Anthony.test</p></footer>
   </body>

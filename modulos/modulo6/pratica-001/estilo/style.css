@@ -2,7 +2,9 @@
 
 body {
   font: normal 15pt ariel, sans-serif;
-  background-color: #89aee2;
+  background: #89aee2 url("../imagens/imagens-fundo.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
@@ -18,7 +20,11 @@ section {
   margin: auto;
   box-shadow: 3px 3px 10px #00000073;
 }
-
+select#flista {
+  width: 100%;
+  height: 150px;
+  margin-top: 5px;
+}
 footer {
   color: white;
   text-align: center;
